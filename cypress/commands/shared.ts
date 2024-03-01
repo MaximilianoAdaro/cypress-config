@@ -18,11 +18,11 @@ export const setupSharedNodeEvents = (
         console.log('CONSOLE: Cypress after:run');
         return require('dd-trace/ci/cypress/after-run')(results)
     });
-    on('after:spec', (_: Cypress.Spec, results: CypressCommandLine.RunResult) => {
-        // console.log('CONSOLE: Cypress after:spec', results);
-        console.log('CONSOLE: Cypress after:spec');
-        return removeAssetsIfNotFailedOrFlaky(results);
-    });
+    // on('after:spec', (_: Cypress.Spec, results: CypressCommandLine.RunResult) => {
+    //     // console.log('CONSOLE: Cypress after:spec', results);
+    //     console.log('CONSOLE: Cypress after:spec');
+    //     return removeAssetsIfNotFailedOrFlaky(results);
+    // });
     on(
         'before:browser:launch',
         (browser: Cypress.Browser, launchOptions: Cypress.BrowserLaunchOptions) => {
