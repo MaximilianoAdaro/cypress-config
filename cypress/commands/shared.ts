@@ -13,7 +13,7 @@ export const setupSharedNodeEvents = (
     cypressFailFast(on, config);
     // cypressSplit(on, config);
     on('after:run', (results: CypressCommandLine.CypressRunResult) => {
-        // console.log('CONSOLE: Cypress after run', results);
+        // console.log('CONSOLE: Cypress after:run', results);
         console.log('CONSOLE: Cypress after:run');
         return Promise.allSettled([
             // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -21,7 +21,7 @@ export const setupSharedNodeEvents = (
         ]);
     });
     // on('after:spec', (_: Cypress.Spec, results: CypressCommandLine.RunResult) => {
-    // console.log('CONSOLE: Cypress after spec', results);
+    // console.log('CONSOLE: Cypress after:spec', results);
     // console.log('CONSOLE: Cypress after:spec');
     // return Promise.allSettled([removeAssetsIfNotFailedOrFlaky(results)]);
     // });
