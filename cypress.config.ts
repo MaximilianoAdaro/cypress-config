@@ -17,14 +17,10 @@ export default defineConfig({
         openMode: 0,
     },
     numTestsKeptInMemory: 1,
-    experimentalMemoryManagement: true,
     experimentalInteractiveRunEvents: true,
     env: {
         // Check docs about how to work with tags at: https://github.com/cypress-io/cypress/tree/develop/npm/grep
         grepOmitFiltered: true,
-        FAIL_FAST_STRATEGY: 'run',
-        FAIL_FAST_ENABLED: true,
-        updateSnapshots: false,
         failOnSnapshotDiff: false,
     },
     e2e: {
