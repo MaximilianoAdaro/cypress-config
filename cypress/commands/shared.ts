@@ -3,7 +3,7 @@
 import cypressSplit from 'cypress-split';
 // import cypressFailFast from 'cypress-fail-fast/plugin';
 // eslint-disable-next-line no-restricted-imports
-// import datadogPlugin from 'dd-trace/ci/cypress/plugin';
+import datadogPlugin from 'dd-trace/ci/cypress/plugin';
 import {handleBrowserLaunchConfig, removeAssetsIfNotFailedOrFlaky} from "./assets";
 
 export const setupSharedNodeEvents = (
@@ -11,7 +11,7 @@ export const setupSharedNodeEvents = (
     config: any,
     addCustomBrowserLaunchConfig?: (browser: any, launchOptions: any) => any
 ) => {
-    // datadogPlugin(on, config);
+    datadogPlugin(on, config);
     // cypressFailFast(on, config);
     cypressSplit(on, config);
     on('after:run', (results: CypressCommandLine.CypressRunResult) => {
