@@ -13,11 +13,12 @@ jobs:
         uses: actions/checkout@v4
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
-        with:
-          build: yarn
-          browser: chrome
+
+      - name: Yarn install
+        run: yarn install --frozen-lockfile
+
+      - name: Cypress verify
+        run: yarn run cypress:run
         env:
           # Needed for the E2E tests DDog CI Visibility
           # For E2Es the matrix.projects will always be a single project
@@ -25,4 +26,18 @@ jobs:
           DD_API_KEY: ${{ secrets.DATADOG_API_KEY }}
           DD_ENV: maxi-ci
           DD_SERVICE: maxi-cypress
-      #          DD_TRACE_DEBUG: 1
+        #          DD_TRACE_DEBUG: 1
+
+#      - name: Cypress run
+#        uses: cypress-io/github-action@v6
+#        with:
+#          build: yarn
+#          browser: chrome
+#        env:
+#          # Needed for the E2E tests DDog CI Visibility
+#          # For E2Es the matrix.projects will always be a single project
+#          DD_CIVISIBILITY_AGENTLESS_ENABLED: true
+#          DD_API_KEY: ${{ secrets.DATADOG_API_KEY }}
+#          DD_ENV: maxi-ci
+#          DD_SERVICE: maxi-cypress
+#      #          DD_TRACE_DEBUG: 1
