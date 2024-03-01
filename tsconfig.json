@@ -5,8 +5,7 @@
     "esModuleInterop": true,
     "target": "es6",
     "moduleResolution": "node",
-    "sourceMap": true,
-    "inlineSources": false,
+    "inlineSources": true,
     "outDir": "dist"
   },
   "lib": [

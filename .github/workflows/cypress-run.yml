@@ -1,0 +1,61 @@
+name: Cypress Tests
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          build: yarn
+          browser: chrome
+
+#  cypress-test:
+#    timeout-minutes: 60
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v4
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: 18
+#
+#      # We can skip docker and testing deps to speed up the setup
+#      - name: CI setup
+#        uses: ./.github/actions/ci-basic-setup
+#        with:
+#          gc-token: ${{ secrets.GKE_SA_TERRAFORM }}
+#          ssh-key: ${{ secrets.PRIVATE_MODULE_RSA }}
+#          docker-deps: false
+#          testing-deps: false
+#
+#      - name: Install Playwright Browsers
+#        run: yarn playwright install --with-deps
+#
+#      - name: Run Playwright tests
+#        run: yarn playwright test
+#        env:
+#          # Needed for the E2E tests DDog CI Visibility
+#          # For E2Es the matrix.projects will always be a single project
+#          DD_CIVISIBILITY_AGENTLESS_ENABLED: true
+#          NODE_OPTIONS: "-r dd-trace/ci/init"
+#          DD_API_KEY: ${{ secrets.DATADOG_API_KEY }}
+#          DD_ENV: ci
+#          DD_SERVICE: playwright
+#      #          DD_TRACE_DEBUG: 1
+#
+#
+#      - uses: actions/upload-artifact@v3
+#        if: always()
+#        with:
+#          name: playwright-report
+#          path: playwright-report/
+#          retention-days: 7
