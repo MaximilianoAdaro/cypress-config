@@ -30,6 +30,6 @@ export default defineConfig({
             return plugins(on, config);
         },
         specPattern: './cypress/src/e2e/integration/**/*.spec.ts',
-        supportFile: './cypress/support/index.ts',
+        supportFile: './cypress/support/support.ts',
     },
 });

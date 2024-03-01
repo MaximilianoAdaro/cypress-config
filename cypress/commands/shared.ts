@@ -4,6 +4,7 @@
 import cypressFailFast from 'cypress-fail-fast/plugin';
 // eslint-disable-next-line no-restricted-imports
 import datadogPlugin from 'dd-trace/ci/cypress/plugin';
+import {removeAssetsIfNotFailedOrFlaky} from "./assets";
 
 export const setupSharedNodeEvents = (
     on: any,
@@ -15,15 +16,12 @@ export const setupSharedNodeEvents = (
     on('after:run', (results: CypressCommandLine.CypressRunResult) => {
         // console.log('CONSOLE: Cypress after:run', results);
         console.log('CONSOLE: Cypress after:run');
-        return Promise.allSettled([
-            // eslint-disable-next-line @typescript-eslint/no-var-requires
-            require('dd-trace/ci/cypress/after-run')(results),
-        ]);
+        return require('dd-trace/ci/cypress/after-run')(results)
     });
     // on('after:spec', (_: Cypress.Spec, results: CypressCommandLine.RunResult) => {
     // console.log('CONSOLE: Cypress after:spec', results);
     // console.log('CONSOLE: Cypress after:spec');
-    // return Promise.allSettled([removeAssetsIfNotFailedOrFlaky(results)]);
+    // return removeAssetsIfNotFailedOrFlaky(results);
     // });
     on(
         'before:browser:launch',
