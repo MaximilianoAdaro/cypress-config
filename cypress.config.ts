@@ -28,7 +28,7 @@ export default defineConfig({
             setupSharedNodeEvents(on, config);
             return plugins(on, config);
         },
-        specPattern: './cypress/src/e2e/integration/**/*.spec.ts',
+        specPattern: './src/e2e/integration/**/*.spec.ts',
         supportFile: './cypress/support/support.ts',
     },
 });
