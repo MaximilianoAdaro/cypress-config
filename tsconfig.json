@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "inlineSources": false,
+    "outDir": "dist"
+  },
+  "lib": [
+    "es2015"
+  ]
+}
