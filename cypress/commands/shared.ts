@@ -18,7 +18,7 @@ export const setupSharedNodeEvents = (
         // console.log('CONSOLE: Cypress after run', results);
         return Promise.allSettled([
             // eslint-disable-next-line @typescript-eslint/no-var-requires
-            // require('dd-trace/ci/cypress/after-run')(results),
+            require('dd-trace/ci/cypress/after-run')(results),
         ]);
     });
     on('after:spec', (_: Cypress.Spec, results: CypressCommandLine.RunResult) => {
