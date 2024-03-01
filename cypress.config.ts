@@ -13,10 +13,9 @@ export default defineConfig({
     viewportWidth: 1366,
     viewportHeight: 768,
     retries: {
-        runMode: 2,
+        runMode: 0,
         openMode: 0,
     },
-    numTestsKeptInMemory: 1,
     experimentalInteractiveRunEvents: true,
     env: {
         // Check docs about how to work with tags at: https://github.com/cypress-io/cypress/tree/develop/npm/grep
