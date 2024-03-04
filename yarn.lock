@@ -79,10 +79,10 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@datadog/native-appsec@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@datadog/native-appsec/-/native-appsec-7.0.0.tgz#a380174dd49aef2d9bb613a0ec8ead6dc7822095"
-  integrity sha512-bywstWFW2hWxzPuS0+mFMVHHL0geulx5yQFtsjfszaH2LTAgk2D+Rt40MKbAoZ8q3tRw2dy6aYQ7svO3ca8jpA==
+"@datadog/native-appsec@7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@datadog/native-appsec/-/native-appsec-7.1.0.tgz#e8e6254236ac6fd7d4fb8b1156b34de64ec3e174"
+  integrity sha512-5FATunIxmvuSGDwPmbXfOi21wC7rjfbdLX4QiT5LR+iRLjRLT5iETqwdTsqy0WOQIHmxdWuddRvuakAg3921aA==
   dependencies:
     node-gyp-build "^3.9.0"
 
@@ -791,12 +791,11 @@ dc-polyfill@^0.1.4:
   resolved "https://registry.yarnpkg.com/dc-polyfill/-/dc-polyfill-0.1.4.tgz#4118cec81a8fab9a5729c41c285c715ffa42495a"
   integrity sha512-8iwEduR2jR9wWYggeaYtYZWRiUe3XZPyAQtMTL1otv8X3kfR8xUIVb4l5awHEeyDrH6Je7N324lKzMKlMMN6Yw==
 
-dd-trace@3.50.0:
-  version "3.50.0"
-  resolved "https://registry.yarnpkg.com/dd-trace/-/dd-trace-3.50.0.tgz#6ed82a8be0d95b645efcdbc9278c1a51e47d07ba"
-  integrity sha512-e4nw89MvqjPDUmUgYwffvVHY2upRHG2YNMUXY1iNcwQo8q64JuHTTazOessHO5yqYcXZ+OWdH0xXDO6Dqzj05A==
+"dd-trace@https://github.com/DataDog/dd-trace-js/tarball/juan-fernandez/expose-after-spec-cypress":
+  version "6.0.0-pre"
+  resolved "https://github.com/DataDog/dd-trace-js/tarball/juan-fernandez/expose-after-spec-cypress#c34dbbfb1582506cec61ce129731da67bdda0537"
   dependencies:
-    "@datadog/native-appsec" "7.0.0"
+    "@datadog/native-appsec" "7.1.0"
     "@datadog/native-iast-rewriter" "2.2.3"
     "@datadog/native-iast-taint-tracking" "1.7.0"
     "@datadog/native-metrics" "^2.0.0"
