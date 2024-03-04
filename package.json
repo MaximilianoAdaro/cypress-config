@@ -15,7 +15,7 @@
     "cypress": "13.2.0",
     "cypress-fail-fast": "7.0.1",
     "cypress-split": "1.3.15",
-    "dd-trace": "3.50.0"
+    "dd-trace": "https://github.com/DataDog/dd-trace-js/tarball/juan-fernandez/expose-after-spec-cypress"
   },
   "devDependencies": {
     "typescript": "^5.3.3"
