@@ -18,8 +18,9 @@
     "dd-trace": "^6.0.0-pre-ac0fc13"
   },
   "devDependencies": {
-    "typescript": "^5.3.3",
-    "nx": "15.9.7"
+    "@nrwl/cypress": "15.9.7",
+    "nx": "15.9.7",
+    "typescript": "^5.3.3"
   },
   "nx": {
     "targets": {}
