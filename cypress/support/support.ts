@@ -1,3 +1,2 @@
 import "cypress-fail-fast";
-
-require('dd-trace/ci/cypress/support')
+import "dd-trace/ci/cypress/support"
