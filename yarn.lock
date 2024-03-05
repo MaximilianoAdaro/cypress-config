@@ -791,9 +791,10 @@ dc-polyfill@^0.1.4:
   resolved "https://registry.yarnpkg.com/dc-polyfill/-/dc-polyfill-0.1.4.tgz#4118cec81a8fab9a5729c41c285c715ffa42495a"
   integrity sha512-8iwEduR2jR9wWYggeaYtYZWRiUe3XZPyAQtMTL1otv8X3kfR8xUIVb4l5awHEeyDrH6Je7N324lKzMKlMMN6Yw==
 
-"dd-trace@https://github.com/DataDog/dd-trace-js/tarball/juan-fernandez/expose-after-spec-cypress":
-  version "6.0.0-pre"
-  resolved "https://github.com/DataDog/dd-trace-js/tarball/juan-fernandez/expose-after-spec-cypress#c34dbbfb1582506cec61ce129731da67bdda0537"
+dd-trace@^6.0.0-pre-ac0fc13:
+  version "6.0.0-pre-ac0fc13"
+  resolved "https://registry.yarnpkg.com/dd-trace/-/dd-trace-6.0.0-pre-ac0fc13.tgz#a15da2a4b4d7fd2e567c56d42cb67467ea380a5a"
+  integrity sha512-QeadK+T2R+8i+5UbSxujpDuM6Mxb1mVJGsQXu0Zys6KEBrPfl/M9j0/b6X3eH8r8ugGcLR9BiDNZOmtU3EyJDA==
   dependencies:
     "@datadog/native-appsec" "7.1.0"
     "@datadog/native-iast-rewriter" "2.2.3"
