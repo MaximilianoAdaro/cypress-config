@@ -10,10 +10,17 @@
     "paths": {
       "@custom/cypress-commands": [
         "libs/cypress-commands/src/index.ts"
+      ],
+      "@custom/cypress-runner": [
+        "libs/cypress-runner/src/index.ts"
       ]
     }
   },
   "lib": [
     "es2015"
+  ],
+  "exclude": [
+    "node_modules",
+    "tmp"
   ]
 }
