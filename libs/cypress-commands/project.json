@@ -1,0 +1,11 @@
+{
+  "name": "cypress-commands",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/cypress-commands/src",
+  "projectType": "library",
+  "targets": {
+    "test": {}
+  },
+  "tags": [],
+  "root": "libs/cypress-commands"
+}

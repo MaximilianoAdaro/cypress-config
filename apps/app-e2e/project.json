@@ -1,0 +1,23 @@
+{
+  "name": "app-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/app-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/app-e2e/cypress.config.ts",
+        "tsConfig": "apps/app-e2e/tsconfig.e2e.json"
+      }
+    },
+    "mq-e2es": {
+      "options": {
+        "runTarget": "app-e2e:e2e",
+        "specPattern": "**/src/integration/**/*.spec.ts"
+      }
+    }
+  },
+  "tags": [],
+  "root": "apps/app-e2e"
+}
