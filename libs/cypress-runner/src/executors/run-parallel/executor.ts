@@ -102,6 +102,9 @@ export default async function runParallel(
 
     const {project, target, configuration} = parseTargetString(runTarget);
 
+    console.log("{project, target, configuration}");
+    console.table({project, target, configuration});
+
     const specsChunks = await getSpecsChunks({
         specPattern,
         ignorePattern,
@@ -110,6 +113,11 @@ export default async function runParallel(
         shardIndex,
         projectRootPath: `${context.cwd}/${context.workspace.projects[project].root}`,
     });
+
+    console.log("specsChunks");
+    console.log(specsChunks);
+
+    console.log("process.env.CI: ", process.env.CI);
 
     /**
      * Start single instance of Xvfb server to avoid having problems when running multiple instances

@@ -29,7 +29,7 @@
       "options": {
         "threads": 2,
         "browser": "chrome",
-        "headed": false,
+        "headed": true,
         "failFast": true
       }
     }
