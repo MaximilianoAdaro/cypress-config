@@ -19,19 +19,6 @@
         "default",
         "^production"
       ]
-    },
-    "mq-e2es": {
-      "inputs": [
-        "default",
-        "^production"
-      ],
-      "executor": "@cypress-runner:run-parallel",
-      "options": {
-        "threads": 4,
-        "browser": "chrome",
-        "headed": false,
-        "failFast": true
-      }
     }
   },
   "namedInputs": {
