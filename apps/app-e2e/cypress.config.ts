@@ -1,8 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import {defineConfig} from 'cypress';
-import {setupSharedNodeEvents} from "./cypress/commands/shared";
-import {plugins} from "./cypress/commands/plugin";
+import {setupSharedNodeEvents} from "../../cypress/commands/shared";
+import {plugins} from "../../cypress/commands/plugin";
 
 export default defineConfig({
     fileServerFolder: '.',
@@ -28,7 +28,7 @@ export default defineConfig({
             setupSharedNodeEvents(on, config);
             return plugins(on, config);
         },
-        specPattern: './src/e2e/integration/**/*.spec.ts',
-        supportFile: './cypress/support/support.ts',
+        specPattern: './src/integration/**/*.spec.ts',
+        supportFile: './src/support/support.ts',
     },
 });

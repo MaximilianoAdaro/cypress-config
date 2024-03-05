@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:run:headed": "cypress run --headed --browser chrome",
-    "cypress:run": "cypress run --browser chrome"
+    "cypress:run:headed": "nx run app-e2e:e2e --headed --browser chrome",
+    "cypress:run": "nx run app-e2e:e2e --browser chrome"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +20,7 @@
   "devDependencies": {
     "@nrwl/cypress": "15.9.7",
     "nx": "15.9.7",
-    "typescript": "^5.3.3"
+    "typescript": "4.8.4"
   },
   "nx": {
     "targets": {}
