@@ -1,0 +1,9 @@
+{
+  "executors": {
+    "run-parallel": {
+      "implementation": "./src/executors/run-parallel/executor",
+      "schema": "./src/executors/run-parallel/schema.json",
+      "description": "run-parallel executor"
+    }
+  }
+}

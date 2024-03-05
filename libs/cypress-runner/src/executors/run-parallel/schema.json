@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "version": 2,
+  "cli": "nx",
+  "title": "RunParallel executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "threads": {
+      "type": "number",
+      "description": "Number of threads"
+    },
+    "runTarget": {
+      "type": "string",
+      "description": "Target executor that will be run for each thread. Example: app-e2e:acceptance-ci-dev"
+    },
+    "specPattern": {
+      "type": "string",
+      "description": "Glob pattern of the tests that are going to be run"
+    },
+    "failFast": {
+      "type": "boolean",
+      "description": "Whether all threads should terminate upon first failing thread"
+    }
+  },
+  "required": []
+}

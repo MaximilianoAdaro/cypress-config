@@ -1,0 +1,11 @@
+{
+  "name": "cypress-runner",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/cypress-runner/src",
+  "projectType": "library",
+  "targets": {
+    "test": {}
+  },
+  "tags": [],
+  "root": "libs/cypress-runner"
+}
