@@ -1,8 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import {defineConfig} from 'cypress';
-import {setupSharedNodeEvents} from "../../cypress/commands/shared";
-import {plugins} from "../../cypress/commands/plugin";
+import {plugins} from "./src/plugins/plugin";
+import {setupSharedNodeEvents} from "@custom/cypress-commands";
 
 export default defineConfig({
     fileServerFolder: '.',
@@ -12,6 +12,7 @@ export default defineConfig({
     requestTimeout: 30000,
     viewportWidth: 1366,
     viewportHeight: 768,
+    screenshotOnRunFailure: false,
     retries: {
         runMode: 0,
         openMode: 0,

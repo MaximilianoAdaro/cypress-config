@@ -6,7 +6,12 @@
     "target": "es6",
     "moduleResolution": "node",
     "inlineSources": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "paths": {
+      "@custom/cypress-commands": [
+        "libs/cypress-commands/src/index.ts"
+      ]
+    }
   },
   "lib": [
     "es2015"
