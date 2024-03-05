@@ -78,7 +78,6 @@ export default async function runParallel(
         threads,
         runTarget,
         specPattern,
-        updateWeightsFile,
         failFast,
         ignorePattern,
         shard = '1/1',
@@ -86,7 +85,16 @@ export default async function runParallel(
     }: RunParallelExecutorSchema,
     context: ExecutorContext
 ) {
-    console.log('runParallel');
+    console.log('Starting run-parallel executor...');
+    console.table({
+        threads,
+        runTarget,
+        specPattern,
+        failFast,
+        ignorePattern,
+        shard,
+        ...restOptions,
+    });
     const {shardIndex, numShards} = parseShardString(shard);
 
     if (shardIndex >= numShards || shardIndex < 0)
@@ -134,7 +142,7 @@ export default async function runParallel(
                         ...CONFIG_OVERRIDE,
                         spec: chunk.join(','),
                         env: {
-                            UPDATE_WEIGHTS_FILE: !!updateWeightsFile,
+                            UPDATE_WEIGHTS_FILE: false,
                         },
                     },
                     context
