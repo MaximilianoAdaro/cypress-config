@@ -27,7 +27,7 @@
       ],
       "executor": "@custom/cypress-runner:run-parallel",
       "options": {
-        "threads": 2,
+        "threads": 1,
         "browser": "chrome",
         "headed": true,
         "failFast": true
