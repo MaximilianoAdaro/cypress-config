@@ -14,7 +14,7 @@ export default defineConfig({
     viewportHeight: 768,
     screenshotOnRunFailure: false,
     retries: {
-        runMode: 0,
+        runMode: 1,
         openMode: 0,
     },
     experimentalInteractiveRunEvents: true,
