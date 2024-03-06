@@ -1,5 +1,5 @@
 describe('test 1 template spec', () => {
-    afterEach(() => {
+    beforeEach(() => {
         console.log('CONSOLE: afterEach test 1');
         throw new Error('after each error test 1')
     })
