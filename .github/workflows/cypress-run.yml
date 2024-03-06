@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - test-bunch-of-changes
   workflow_dispatch:
 
 jobs:
