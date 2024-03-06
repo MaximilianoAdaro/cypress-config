@@ -1,7 +1,7 @@
 describe('test 1 template spec', () => {
     afterEach(() => {
         console.log('CONSOLE: afterEach test 1');
-        expect(true).to.equal(false)
+        throw new Error('after each error test 1')
     })
 
     it('1. test passes', () => {
