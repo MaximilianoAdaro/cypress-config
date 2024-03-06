@@ -1,0 +1,183 @@
+app-e2e: CONSOLE: Cypress after:spec {
+app-e2e:   error: null,
+app-e2e:   reporter: 'spec',
+app-e2e:   reporterStats: {
+app-e2e:     suites: 1,
+app-e2e:     tests: 2,
+app-e2e:     passes: 1,
+app-e2e:     pending: 0,
+app-e2e:     failures: 1,
+app-e2e:     start: '2024-03-06T03:25:55.554Z',
+app-e2e:     end: '2024-03-06T03:25:56.379Z',
+app-e2e:     duration: 825
+app-e2e:   },
+app-e2e:   screenshots: [],
+app-e2e:   spec: {
+app-e2e:     absolute: '/home/runner/work/cypress-config/cypress-config/apps/app-e2e/src/integration/test2.spec.ts',
+app-e2e:     fileExtension: '.ts',
+app-e2e:     fileName: 'test2',
+app-e2e:     name: 'test2.spec.ts',
+app-e2e:     relative: 'src/integration/test2.spec.ts'
+app-e2e:   },
+app-e2e:   stats: {
+app-e2e:     duration: 828,
+app-e2e:     endedAt: '2024-03-06T03:25:56.373Z',
+app-e2e:     failures: 1,
+app-e2e:     passes: 1,
+app-e2e:     pending: 0,
+app-e2e:     skipped: 1,
+app-e2e:     startedAt: '2024-03-06T03:25:55.545Z',
+app-e2e:     suites: 1,
+app-e2e:     tests: 3
+app-e2e:   },
+app-e2e:   tests: [
+app-e2e:     {
+app-e2e:       attempts: [Array],
+app-e2e:       displayError: null,
+app-e2e:       duration: 160,
+app-e2e:       state: 'passed',
+app-e2e:       title: [Array]
+app-e2e:     },
+app-e2e:     {
+app-e2e:       attempts: [Array],
+app-e2e:       displayError: 'AssertionError: expected true to equal false\n' +
+app-e2e:         '    at Context.eval (webpack:///./src/integration/test2.spec.ts:7:24)',
+app-e2e:       duration: 448,
+app-e2e:       state: 'failed',
+app-e2e:       title: [Array]
+app-e2e:     },
+app-e2e:     {
+app-e2e:       attempts: [Array],
+app-e2e:       displayError: null,
+app-e2e:       duration: 0,
+app-e2e:       state: 'skipped',
+app-e2e:       title: [Array]
+app-e2e:     }
+app-e2e:   ],
+app-e2e:   video: null
+app-e2e: }
+app-e2e:   (Results)
+app-e2e:   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+app-e2e:   │ Tests:        3                                                                                │
+app-e2e:   │ Passing:      1                                                                                │
+app-e2e:   │ Failing:      1                                                                                │
+app-e2e:   │ Pending:      0                                                                                │
+app-e2e:   │ Skipped:      1                                                                                │
+app-e2e:   │ Screenshots:  0                                                                                │
+app-e2e:   │ Video:        false                                                                            │
+app-e2e:   │ Duration:     0 seconds                                                                        │
+app-e2e:   │ Spec Ran:     test2.spec.ts                                                                    │
+app-e2e:   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+app-e2e: [fail-fast] Stopping Cypress runner due to a previous failure
+app-e2e: CONSOLE: Cypress after:run {
+app-e2e:   browserName: 'chrome',
+app-e2e:   browserPath: 'google-chrome',
+app-e2e:   browserVersion: '122.0.6261.69',
+app-e2e:   config: {
+app-e2e:     configFile: '/home/runner/work/cypress-config/cypress-config/apps/app-e2e/cypress.config.ts',
+app-e2e:     env: {
+app-e2e:       IS_LOCAL: false,
+app-e2e:       grepOmitFiltered: true,
+app-e2e:       FAIL_FAST_STRATEGY: 'run',
+app-e2e:       FAIL_FAST_ENABLED: true,
+app-e2e:       UPDATE_WEIGHTS_FILE: false,
+app-e2e:       tsConfig: '/home/runner/work/cypress-config/cypress-config/apps/app-e2e/tsconfig.e2e.json'
+app-e2e:     },
+app-e2e:     testingType: 'e2e',
+app-e2e:     fileServerFolder: '/home/runner/work/cypress-config/cypress-config/apps/app-e2e',
+app-e2e:     modifyObstructiveCode: false,
+app-e2e:     chromeWebSecurity: false,
+app-e2e:     defaultCommandTimeout: 30000,
+app-e2e:     requestTimeout: 30000,
+app-e2e:     viewportWidth: 1366,
+app-e2e:     viewportHeight: 768,
+app-e2e:     screenshotOnRunFailure: false,
+app-e2e:     retries: { runMode: 1, openMode: 0 },
+app-e2e:     experimentalInteractiveRunEvents: true,
+app-e2e:     specPattern: './src/integration/**/*.spec.ts',
+app-e2e:     supportFile: '/home/runner/work/cypress-config/cypress-config/apps/app-e2e/src/support/support.ts',
+app-e2e:     projectRoot: '/home/runner/work/cypress-config/cypress-config/apps/app-e2e',
+app-e2e:     projectName: 'app-e2e',
+app-e2e:     isTextTerminal: true,
+app-e2e:     animationDistanceThreshold: 5,
+app-e2e:     arch: 'x64',
+app-e2e:     baseUrl: null,
+app-e2e:     blockHosts: null,
+app-e2e:     clientCertificates: [],
+app-e2e:     downloadsFolder: '/home/runner/work/cypress-config/cypress-config/apps/app-e2e/cypress/downloads',
+app-e2e:     execTimeout: 60000,
+app-e2e:     experimentalCspAllowList: false,
+app-e2e:     experimentalFetchPolyfill: false,
+app-e2e:     experimentalRunAllSpecs: false,
+app-e2e:     experimentalMemoryManagement: false,
+app-e2e:     experimentalModifyObstructiveThirdPartyCode: false,
+app-e2e:     experimentalSkipDomainInjection: null,
+app-e2e:     experimentalOriginDependencies: false,
+app-e2e:     experimentalSourceRewriting: false,
+app-e2e:     experimentalSingleTabRunMode: false,
+app-e2e:     experimentalStudio: false,
+app-e2e:     experimentalWebKitSupport: false,
+app-e2e:     fixturesFolder: '/home/runner/work/cypress-config/cypress-config/apps/app-e2e/cypress/fixtures',
+app-e2e:     excludeSpecPattern: '*.hot-update.js',
+app-e2e:     includeShadowDom: false,
+app-e2e:     keystrokeDelay: 0,
+app-e2e:     numTestsKeptInMemory: 0,
+app-e2e:     platform: 'linux',
+app-e2e:     pageLoadTimeout: 60000,
+app-e2e:     port: 43241,
+app-e2e:     projectId: null,
+app-e2e:     redirectionLimit: 20,
+app-e2e:     reporter: 'spec',
+app-e2e:     reporterOptions: null,
+app-e2e:     resolvedNodePath: '/usr/local/bin/node',
+app-e2e:     resolvedNodeVersion: '18.19.1',
+app-e2e:     responseTimeout: 30000,
+app-e2e:     screenshotsFolder: '/home/runner/work/cypress-config/cypress-config/apps/app-e2e/cypress/screenshots',
+app-e2e:     slowTestThreshold: 10000,
+app-e2e:     scrollBehavior: 'top',
+app-e2e:     taskTimeout: 60000,
+app-e2e:     testIsolation: true,
+app-e2e:     trashAssetsBeforeRuns: true,
+app-e2e:     userAgent: null,
+app-e2e:     video: false,
+app-e2e:     videoCompression: false,
+app-e2e:     videosFolder: '/home/runner/work/cypress-config/cypress-config/apps/app-e2e/cypress/videos',
+app-e2e:     waitForAnimations: true,
+app-e2e:     watchForFileChanges: false,
+app-e2e:     browsers: [ [Object], [Object], [Object], [Object], [Object] ],
+app-e2e:     cypressBinaryRoot: '/home/runner/.cache/Cypress/13.2.0/Cypress/resources/app',
+app-e2e:     hosts: null,
+app-e2e:     isInteractive: true,
+app-e2e:     version: '13.2.0',
+app-e2e:     browser: null,
+app-e2e:     cypressInternalEnv: 'production'
+app-e2e:   },
+app-e2e:   cypressVersion: '13.2.0',
+app-e2e:   endedTestsAt: '2024-03-06T03:25:56.373Z',
+app-e2e:   osName: 'linux',
+app-e2e:   osVersion: 'Ubuntu - ',
+app-e2e:   runs: [
+app-e2e:     {
+app-e2e:       error: null,
+app-e2e:       reporter: 'spec',
+app-e2e:       reporterStats: [Object],
+app-e2e:       screenshots: [],
+app-e2e:       spec: [Object],
+app-e2e:       stats: [Object],
+app-e2e:       tests: [Array],
+app-e2e:       video: null
+app-e2e:     }
+app-e2e:   ],
+app-e2e:   startedTestsAt: '2024-03-06T03:25:55.545Z',
+app-e2e:   totalDuration: 828,
+app-e2e:   totalFailed: 1,
+app-e2e:   totalPassed: 1,
+app-e2e:   totalPending: 0,
+app-e2e:   totalSkipped: 1,
+app-e2e:   totalSuites: 1,
+app-e2e:   totalTests: 3
+app-e2e: }
+app-e2e: Error: [FAIL FAST] - A thread finished with 'failed' status
+app-e2e:     at /home/runner/work/cypress-config/cypress-config/libs/cypress-runner/src/executors/run-parallel/executor.ts:134:53
+app-e2e:     at async Promise.all (index 1)
+app-e2e:     at runParallel (/home/runner/work/cypress-config/cypress-config/libs/cypress-runner/src/executors/run-parallel/executor.ts:113:25)

@@ -1,0 +1,178 @@
+portal-e2e:     (Attempt 1 of 3) automatically redirects to Google SSO auth if query param is passed
+portal-e2e:     ✓ pending invitation is displayed correctly (6964ms)
+portal-e2e:     (Attempt 2 of 3) automatically redirects to Google SSO auth if query param is passed
+portal-e2e:     ✓ invitation awaiting verification is displayed correctly (7788ms)
+portal-e2e:     1) "after each" hook for "automatically redirects to Google SSO auth if query param is passed"
+portal-e2e:   5 passing (50s)
+portal-e2e:   1 failing
+portal-e2e:   1) Login
+portal-e2e:        "after each" hook for "automatically redirects to Google SSO auth if query param is passed":
+portal-e2e:      TypeError: Cannot set property message of [object DOMException] which has only a getter
+portal-e2e: Because this error occurred during a `after each` hook we are skipping all of the remaining tests.
+portal-e2e:       at modifyErrMsg (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:75090:15)
+portal-e2e:       at Object.appendErrMsg (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:75095:10)
+portal-e2e:       at Runner.<anonymous> (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:162674:68)
+portal-e2e:       at Runner.emit (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:146414:7)
+portal-e2e:       at Runner.fail (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:155613:8)
+portal-e2e:       at Runner.fail (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:145675:25)
+portal-e2e:       at Runner.failHook (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:155651:8)
+portal-e2e:       at Hook.<anonymous> (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:155725:14)
+portal-e2e:       at next (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:163064:24)
+portal-e2e:       at http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:163091:13
+portal-e2e:       at tryCatcher (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1807:23)
+portal-e2e:       at Promise._settlePromiseFromHandler (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1519:31)
+portal-e2e:       at Promise._settlePromise (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1576:18)
+portal-e2e:       at Promise._settlePromise0 (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1621:10)
+portal-e2e:       at Promise._settlePromises (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1701:18)
+portal-e2e:       at Promise._fulfill (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1645:18)
+portal-e2e:       at Promise._resolveCallback (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1439:57)
+portal-e2e:       at Promise._settlePromiseFromHandler (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1531:17)
+portal-e2e:       at Promise._settlePromise (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1576:18)
+portal-e2e:       at Promise._settlePromise0 (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1621:10)
+portal-e2e:       at Promise._settlePromises (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1701:18)
+portal-e2e:       at Promise._fulfill (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1645:18)
+portal-e2e:
+portal-e2e: CONSOLE: Cypress after spec ***
+portal-e2e:   error: null,
+portal-e2e:   reporter: 'spec',
+portal-e2e:   reporterStats: ***
+portal-e2e:     suites: 1,
+portal-e2e:     tests: 6,
+portal-e2e:     passes: 5,
+portal-e2e:     pending: 0,
+portal-e2e:     failures: 1,
+portal-e2e:     start: '2024-03-06T00:41:34.924Z',
+portal-e2e:     end: '2024-03-06T00:42:24.755Z',
+portal-e2e:     duration: 49831
+portal-e2e:   ***,
+portal-e2e:   screenshots: [],
+portal-e2e:   spec: ***
+portal-e2e:     absolute: '/runner/_work/client-monorepo/client-monorepo/apps/portal-e2e/src/integration/standard/login.spec.ts',
+portal-e2e:     fileExtension: '.ts',
+portal-e2e:     fileName: 'login',
+portal-e2e:     name: 'login.spec.ts',
+portal-e2e:     relative: 'src/integration/standard/login.spec.ts'
+portal-e2e:   ***,
+portal-e2e:   stats: ***
+portal-e2e:     duration: 49839,
+portal-e2e:     endedAt: '2024-03-06T00:42:24.748Z',
+portal-e2e:     failures: 1,
+portal-e2e:     passes: 5,
+portal-e2e:     pending: 0,
+portal-e2e:     skipped: 1,
+portal-e2e:     startedAt: '2024-03-06T00:41:34.909Z',
+portal-e2e:     suites: 1,
+portal-e2e:     tests: 7
+portal-e2e:   ***,
+portal-e2e:   tests: [
+portal-e2e:     ***
+portal-e2e:       attempts: [Array],
+portal-e2e:       displayError: null,
+portal-e2e:       duration: 12817,
+portal-e2e:       state: 'passed',
+portal-e2e:       title: [Array]
+portal-e2e:     ***,
+portal-e2e:     ***
+portal-e2e:       attempts: [Array],
+portal-e2e:       displayError: null,
+portal-e2e:       duration: 7159,
+portal-e2e:       state: 'passed',
+portal-e2e:       title: [Array]
+portal-e2e:     ***,
+portal-e2e:     ***
+portal-e2e:       attempts: [Array],
+portal-e2e:       displayError: null,
+portal-e2e:       duration: 5216,
+portal-e2e:       state: 'passed',
+portal-e2e:       title: [Array]
+portal-e2e:     ***,
+portal-e2e:     ***
+portal-e2e:       attempts: [Array],
+portal-e2e:       displayError: null,
+portal-e2e:       duration: 7257,
+portal-e2e:       state: 'passed',
+portal-e2e:       title: [Array]
+portal-e2e:     ***,
+portal-e2e:     ***
+portal-e2e:       attempts: [Array],
+portal-e2e:       displayError: null,
+portal-e2e:       duration: 2742,
+portal-e2e:       state: 'passed',
+portal-e2e:       title: [Array]
+portal-e2e:     ***,
+portal-e2e:     ***
+portal-e2e:       attempts: [Array],
+portal-e2e:       displayError: 'TypeError: Cannot set property message of [object DOMException] which has only a getter\n' +
+portal-e2e:         '\n' +
+portal-e2e:         'Because this error occurred during a `after each` hook we are skipping all of the remaining tests.\n' +
+portal-e2e:         '    at modifyErrMsg (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:75090:15)\n' +
+portal-e2e:         '    at Object.appendErrMsg (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:75095:10)\n' +
+portal-e2e:         '    at Runner.<anonymous> (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:162674:68)\n' +
+portal-e2e:         '    at Runner.emit (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:146414:7)\n' +
+portal-e2e:         '    at Runner.fail (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:155613:8)\n' +
+portal-e2e:         '    at Runner.fail (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:145675:25)\n' +
+portal-e2e:         '    at Runner.failHook (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:155651:8)\n' +
+portal-e2e:         '    at Hook.<anonymous> (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:155725:14)\n' +
+portal-e2e:         '    at next (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:163064:24)\n' +
+portal-e2e:         '    at http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:163091:13\n' +
+portal-e2e:         '    at tryCatcher (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1807:23)\n' +
+portal-e2e:         '    at Promise._settlePromiseFromHandler (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1519:31)\n' +
+portal-e2e:         '    at Promise._settlePromise (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1576:18)\n' +
+portal-e2e:         '    at Promise._settlePromise0 (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1621:10)\n' +
+portal-e2e:         '    at Promise._settlePromises (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1701:18)\n' +
+portal-e2e:         '    at Promise._fulfill (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1645:18)\n' +
+portal-e2e:         '    at Promise._resolveCallback (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1439:57)\n' +
+portal-e2e:         '    at Promise._settlePromiseFromHandler (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1531:17)\n' +
+portal-e2e:         '    at Promise._settlePromise (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1576:18)\n' +
+portal-e2e:         '    at Promise._settlePromise0 (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1621:10)\n' +
+portal-e2e:         '    at Promise._settlePromises (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1701:18)\n' +
+portal-e2e:         '    at Promise._fulfill (http://dev.capchase.com:4202/__cypress/runner/cypress_runner.js:1645:18)',
+portal-e2e:       duration: 14267,
+portal-e2e:       state: 'failed',
+portal-e2e:       title: [Array]
+portal-e2e:     ***,
+portal-e2e:     ***
+portal-e2e:       attempts: [Array],
+portal-e2e:       displayError: null,
+portal-e2e:       duration: 0,
+portal-e2e:       state: 'skipped',
+portal-e2e:       title: [Array]
+portal-e2e:     ***
+portal-e2e:   ],
+portal-e2e:   video: null
+portal-e2e: ***
+portal-e2e:   (Results)
+portal-e2e:   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+portal-e2e:   │ Tests:        7                                                                                │
+portal-e2e:   │ Passing:      5                                                                                │
+portal-e2e:   │ Failing:      1                                                                                │
+portal-e2e:   │ Pending:      0                                                                                │
+portal-e2e:   │ Skipped:      1                                                                                │
+portal-e2e:   │ Screenshots:  3                                                                                │
+portal-e2e:   │ Video:        false                                                                            │
+portal-e2e:   │ Duration:     49 seconds                                                                       │
+portal-e2e:   │ Spec Ran:     login.spec.ts                                                                    │
+portal-e2e:   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+portal-e2e:   (Screenshots)
+portal-e2e:   -  /runner/_work/client-monorepo/client-monorepo/dist/cypress/apps/portal-e2e/scree     (1050x882)
+portal-e2e:      nshots/login.spec.ts/automatically redirects to Google SSO auth if query param i
+portal-e2e:      s passed -- after each hook (failed).png
+portal-e2e:   -  /runner/_work/client-monorepo/client-monorepo/dist/cypress/apps/portal-e2e/scree     (1050x882)
+portal-e2e:      nshots/login.spec.ts/automatically redirects to Google SSO auth if query param i
+portal-e2e:      s passed -- after each hook (failed) (attempt 2).png
+portal-e2e:   -  /runner/_work/client-monorepo/client-monorepo/dist/cypress/apps/portal-e2e/scree     (1050x882)
+portal-e2e:      nshots/login.spec.ts/automatically redirects to Google SSO auth if query param i
+portal-e2e:      s passed -- after each hook (failed) (attempt 3).png
+portal-e2e: CONSOLE: Cypress after run
+portal-e2e: CONSOLE Slack: Sending results to Slack
+portal-e2e: ====================================================================================================
+portal-e2e:   (Run Finished)
+portal-e2e:        Spec                                              Tests  Passing  Failing  Pending  Skipped
+portal-e2e:   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+portal-e2e:   │ ✖  login.spec.ts                            00:49        7        5        1        -        1 │
+portal-e2e:   └────────────────────────────────────────────────────────────────────────────────────────────────┘
+portal-e2e:     ✖  1 of 1 failed (100%)                     00:49        7        5        1        -        1
+portal-e2e: Error: [FAIL FAST] - A thread finished with 'failed' status
+portal-e2e:     at /runner/_work/client-monorepo/client-monorepo/libs/cypress-runner/src/executors/run-parallel/executor.ts:170:17
+portal-e2e:     at async Promise.all (index 1)
+portal-e2e:     at runParallel (/runner/_work/client-monorepo/client-monorepo/libs/cypress-runner/src/executors/run-parallel/executor.ts:146:21)
