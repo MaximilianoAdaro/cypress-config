@@ -1,12 +1,39 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "target": "es6",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
     "moduleResolution": "node",
-    "inlineSources": true,
-    "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2017",
+      "dom",
+      "dom.iterable",
+      "es2018.promise",
+      "es2019.array",
+      "es2020"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "strictPropertyInitialization": false,
     "paths": {
       "@custom/cypress-commands": [
         "libs/cypress-commands/src/index.ts"
