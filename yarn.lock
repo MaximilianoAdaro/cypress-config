@@ -1441,10 +1441,6 @@
   dependencies:
     "@bull-board/api" "3.11.1"
 
-"@capchase/events@ssh://git@github.com/capchase/contracts#v1.43.3":
-  version "1.0.0"
-  resolved "ssh://git@github.com/capchase/contracts#9b7bb5c748f8af375099029e29e6832c3c4438d1"
-
 "@cloudflare/kv-asset-handler@0.1.3":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@cloudflare/kv-asset-handler/-/kv-asset-handler-0.1.3.tgz#3eaaf962b16c48a7189db5d5ac1c4dca4e2ed1a0"
