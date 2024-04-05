@@ -14,15 +14,15 @@ export const setupSharedNodeEvents = (
     cypressFailFast(on, config);
     cypressSplit(on, config);
     on('after:run', (results: CypressCommandLine.CypressRunResult) => {
-        console.log('CONSOLE: Cypress after:run', results);
-        // console.log('CONSOLE: Cypress after:run');
+        // console.log('CONSOLE: Cypress after:run', results);
+        console.log('CONSOLE: Cypress after:run');
         return require('dd-trace/ci/cypress/after-run')(results)
     });
     on('after:spec', (_: Cypress.Spec, results: CypressCommandLine.RunResult) => {
-        console.log('CONSOLE: Cypress after:spec', results);
-        // console.log('CONSOLE: Cypress after:spec');
-        require('dd-trace/ci/cypress/after-spec')(_, results)
-        return removeAssetsIfNotFailedOrFlaky(results);
+        // console.log('CONSOLE: Cypress after:spec', results);
+        console.log('CONSOLE: Cypress after:spec');
+        return require('dd-trace/ci/cypress/after-spec')(_, results)
+        // return removeAssetsIfNotFailedOrFlaky(results);
     });
     on(
         'before:browser:launch',
