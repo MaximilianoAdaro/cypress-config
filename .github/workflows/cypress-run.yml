@@ -37,7 +37,7 @@ jobs:
           DD_API_KEY: ${{ secrets.DATADOG_API_KEY }}
           DD_ENV: maxi-ci
           DD_SERVICE: maxi-cypress
-          DD_TAGS: 'run_type:maxi-cypress-ci'
+#          DD_TAGS: 'run_type:maxi-cypress-ci'
           # What about these?
           NODE_OPTIONS: '--openssl-legacy-provider --max-old-space-size=8192'
           LOG_LEVEL: none
